@@ -1,0 +1,32 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Validate Python app",
+			"type": "shell",
+			"command": "python -m py_compile app.py fraud_engine.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Compile project",
+			"type": "shell",
+			"command": "python -m py_compile app.py fraud_engine.py",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Install requirements",
+			"type": "shell",
+			"command": "python -m pip install -r requirements.txt",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}
